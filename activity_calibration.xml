@@ -1,0 +1,75 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/textViewCalibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="---"
+            android:layout_below="@+id/imageView"
+            />
+
+        <Button
+            android:id="@+id/captureButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewCalibration"
+            android:layout_marginTop="30dp"
+            android:text="Capture"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/captureButton"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/retakeButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:text="Retest"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="RETURN MAIN PAGE" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
