@@ -20,5 +20,6 @@ dependencies {
 This will add the OpenCV library to your project.
 
 With these steps completed, you have successfully compiled and set up the project to run with the provided source code.
-
-[Application Introduction Video](https://www.youtube.com/shorts/HEuNIHoW5E8) 
+```
+---
+[**Application Introduction Video**](https://www.youtube.com/shorts/HEuNIHoW5E8) 
